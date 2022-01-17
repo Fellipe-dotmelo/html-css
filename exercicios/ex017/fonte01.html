@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        
+
+        body{
+            font-family: 'Roboto', sans-serif;
+            /*Medidas Absolutas:
+            cm, mm, in (polegada), px, pt, pc
+            
+            Medidas Relativas:
+            em (o dobro de 16px que é a configuração padrão do navegador),
+            ex, rem, vw, vh, %
+
+            É recomendado pela w3c para uso às medidas px e em
+            */
+            font-size: 1em;
+            font-weight: 400;
+            font-style: oblique;
+            /*weight - peso, width - largura, height - altura */
+            /*weight (tipos de peso) - lighter, normal, bold, bolder
+            pode se variar também em valores numéricos, basicamente de 100 à 900 
+            sendo 100 um padrão lighter e 900 padrão bolder            
+            */
+        }
+        h1{
+            /*Shorthand font
+            font-style -> font-weight -> font-size -> font-family         
+            é o mesmo que o que está abaixo, só que de forma resumida
+            
+            font-style: italic;
+            font-weight: bold;
+            font-size: 2.4em;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            */
+
+
+            font: italic bold 2.4em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--Fonte padrão do NAVEGADOR é a Times New Roman-->
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sit alias consequatur reprehenderit aliquam, quasi placeat, recusandae officiis illum blanditiis, quia ullam quaerat tenetur. Non aliquid voluptate doloremque ipsa odio.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero tempore porro omnis similique! Vitae debitis perferendis dolorem nostrum molestias eveniet autem eos quis odit, ducimus corporis dolore tenetur, reprehenderit animi.</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat sit veniam blanditiis illo. Non consequatur deserunt rem blanditiis tempora, dolorem autem quis explicabo eaque, harum dignissimos nesciunt repudiandae eum!</p>
+</body>
+</html>

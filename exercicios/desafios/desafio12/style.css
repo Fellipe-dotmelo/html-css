@@ -5,6 +5,12 @@
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+
 :root{
     --cor-branca: white;
 
@@ -29,22 +35,56 @@ header{
     color: white;
     text-align: center;
     font-family: var(--fonte_titulo);
-    padding: 25px;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px;
 }
 
 main{
-    background-color: wheat;
 }
 
-p > .autor{
-    font-family: 7pt;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgb(0, 0, 0, 0.253);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 footer{
     background-color: black;
     color: white;
-    font-size: 5pt;
     font-family: var(--fonte_titulo);
     text-align: center;
-    padding: 3px;
+    padding: 10px;
 }
